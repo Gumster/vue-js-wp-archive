@@ -54,7 +54,7 @@ if (have_posts() && !is_home()) {
 			</header><!-- .entry-header -->
 
 			<div class="entry-content">
-				{{ article.excerpt.remdered }}
+				{{ article.excerpt.rendered }}
 			</div><!-- .entry-content -->
 
 			<footer class="entry-footer default-max-width">
