@@ -38,8 +38,8 @@ if (have_posts() && !is_home()) {
 		<article v-for="article in posts" class="post type-post status-publish format-standard has-post-thumbnail hentry entry" :id="article.id">
 			<header class="entry-header">
 				<h2 class="entry-title default-max-width">
-					<a :href="article.link">
-					{{ article.title.rendered }}
+					<a :href="article.link" v-html="article.title.rendered">
+
 					</a>
 				</h2>
 
@@ -53,8 +53,8 @@ if (have_posts() && !is_home()) {
 
 			</header><!-- .entry-header -->
 
-			<div class="entry-content">
-				{{ article.excerpt.rendered }}
+			<div class="entry-content" v-html="article.excerpt.rendered">
+
 			</div><!-- .entry-content -->
 
 			<footer class="entry-footer default-max-width">
