@@ -1,4 +1,4 @@
-# A simple demonstration of Wordrpress posts using Vue.js for rendering and pagination
+# A simple demonstration of using Vue.js for rendering and pagination of WP posts
 
 This WP app has only 5 edited PHP files in the twentytwentyone theme:
 
@@ -15,4 +15,10 @@ The Vue app is contained in this file (included in footer.php), while the HTML t
 
 The Vue instance reads posts from the WP REST API.
 
-A page is created ('categories') which is set as the Posts page in Settings=>Reading. That page will utilise index.php, and display the posts using Vue.
+## Setup
+
+The 2021 theme index.php has been modified to respond with a Vue.js instance if the url is set as the Posts page in Settings->Reading->Posts page, using is_home() function.
+
+The Fakerpress plugin is included, to generate random content for Posts. Once some content is present, the Vue rendering will work without further configuration.
+
+No compilation. No Babel. No Webpack.
