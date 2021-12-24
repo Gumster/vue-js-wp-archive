@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - FakerPress - Development (trunk) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-04-21 16:04:52+0000\n"
+"PO-Revision-Date: 2021-10-01 04:54:19+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,6 +19,34 @@ msgstr "Lorem Picsum"
 #: src/FakerPress/Module/Attachment.php:85
 msgid "Invalid image MimeType"
 msgstr "Ungültiger Mime-Bildtyp."
+
+#: src/templates/pages/users.php:60
+msgid "How many paragraphs we are going to generate of description."
+msgstr "Wie viele Absätze wir für die Beschreibung erzeugen werden."
+
+#: src/templates/pages/users.php:59
+msgid "Description Size"
+msgstr "Größe der Beschreibung"
+
+#: src/templates/pages/users.php:46
+msgid "User Description"
+msgstr "Benutzer-Beschreibung"
+
+#: src/templates/pages/posts.php:137
+msgid "Post Content"
+msgstr "Beitragsinhalt"
+
+#: src/templates/pages/comments.php:118 src/templates/pages/posts.php:168
+msgid "How many paragraphs we are going to generate of content."
+msgstr "Wie viele Absätze wir für den Inhalt erzeugen werden."
+
+#: src/templates/pages/comments.php:117 src/templates/pages/posts.php:167
+msgid "Content Size"
+msgstr "Größe des Inhalts"
+
+#: src/templates/pages/comments.php:104
+msgid "Comment Content"
+msgstr "Kommentar-Inhalt"
 
 #: src/FakerPress/Field.php:1258
 msgid "e.g.: 650"

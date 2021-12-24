@@ -29,10 +29,10 @@ if (have_posts() && !is_home()) {
 	// Previous/next page navigation.
 	twenty_twenty_one_the_posts_navigation();
 
-} elseif (is_home()) { // Vue.js article display ?>
+} elseif (is_home()) { // Vue.js article display on dedicated blog page ?>
 
 	<div id="app">
-		<p style="text-align:center;" v-if="total_posts">		
+		<p style="text-align:center;" v-if="total_posts">
 		<small>Found {{ total_posts }} posts</small>
 		</p>
 		<article v-for="article in posts" class="post type-post status-publish format-standard has-post-thumbnail hentry entry" :id="article.id">
@@ -45,9 +45,9 @@ if (have_posts() && !is_home()) {
 
 				<figure class="post-thumbnail">
 					<a :href="article.link" class="post-thumbnail-inner alignwide" aria-hidden="true" tabindex="-1">
-						<img 
+						<img
 						:src="article.featured_image_url"
-						width="386" height="308" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy" 
+						width="386" height="308" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy"
 						style="width:100%;height:79.79%;max-width:386px;"> </a>
 				</figure>
 
@@ -64,7 +64,7 @@ if (have_posts() && !is_home()) {
 		<p style="text-align:center;" v-if="total_pages > 1">
 			<small v-if="total_pages > 0">{{ paged }} of {{ total_pages }} pages</small><br>
 			<button v-if="paged > 1" v-on:click="paginate(0)">First</button>
-			<button v-if="paged > 1" v-on:click="paginate(-1)"><< Prev</button>			
+			<button v-if="paged > 1" v-on:click="paginate(-1)"><< Prev</button>
 			<button v-if="paged < total_pages" v-on:click="paginate(1)">Next >></button>
 			<button v-if="total_pages > 5 && paged < total_pages" v-on:click="paginate(total_pages)">Last</button>
 		</p>
