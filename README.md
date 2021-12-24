@@ -15,6 +15,8 @@ The Vue app is contained in this file (included in footer.php), while the HTML t
 
 The Vue instance reads posts from the WP REST API.
 
+There is a tiny mod to the REST response to include the featured image (see functions.php)
+
 ## Setup
 
 The 2021 theme index.php has been modified to respond with a Vue.js instance if the url is set as the Posts page in Settings->Reading->Posts page, using is_home() function.
